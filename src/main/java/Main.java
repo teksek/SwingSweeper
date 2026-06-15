@@ -275,7 +275,7 @@ public class Main {
                          */
                         int neighborRow = r + rowOffset;
                         int neighborCol = c + colOffset;
-                        if (neighborRow >= 0 && neighborRow < gameRows && neighborCol >= 0 && neighborCol < gameCols) //IM FUCKING TWEAKING (ArrayIndexOutOfBoundsException)
+                        if (neighborRow >= 0 && neighborRow < gameRows && neighborCol >= 0 && neighborCol < gameCols)
                             if (grid[neighborRow][neighborCol].isBomb()) bombCountAround++;
                     }
                 grid[r][c].setAdjacentBombs(bombCountAround);
